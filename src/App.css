@@ -1,0 +1,77 @@
+.fighter{
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
+p{
+  font-size: 10px;
+}
+
+.innerBody{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+}
+
+.upgradeOptionBox{
+  flex:1;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.upgradeOptions{
+  display: flex;
+  width: 60%;
+  gap: 20px;
+  justify-content: space-between;
+  background-color: #24a0ed;
+  padding: 20px 40px 20px 40px;
+}
+
+.button{
+  padding: 10px 40%;
+  background-color: rgb(24, 139, 255);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  margin: 8px;
+}
+
+.title{
+  font-size: 2rem;
+  margin: 10px;
+  font-weight: bold;
+  font-family: 'Source Sans 3';
+}
+
+.tag{
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.key{
+  padding-left: 10px;
+  font-size: 12px;
+  margin: 0px 0px 15px 0px;
+}
+
+.value{
+  margin: 0px 0px 15px 0px;
+}
+
+hr{
+  margin: auto 0px 15px 0px;
+}
+
+.appIn{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
