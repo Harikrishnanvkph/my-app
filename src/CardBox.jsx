@@ -2,6 +2,7 @@ import CardDetails from './variable.js'
 import { FreeMap } from './variable.js'
 import Card from './Card.jsx'
 
+var cardsObj = []
 var freeObj = new CardDetails(
     "FREE",
     "$0/month",
@@ -17,14 +18,15 @@ var proObj = new CardDetails(
     "$49/month",
     FreeMap("Unlimited",50,[true,true,true,true,true,true,true,true])
 )
+cardsObj.push(freeObj,plusObj,proObj);
 
 export default function CardBox(){
     return (
         <div className='appIn'>
             <div className='upgradeOptions'>
-                <Card tag={freeObj.tag} title={freeObj.title} map={freeObj.map}  />        
-                <Card tag={plusObj.tag} title={plusObj.title} map={plusObj.map} />
-                <Card tag={proObj.tag} title={proObj.title} map={proObj.map} />
+                {cardsObj.map(a => (
+                    <Card tag={a.tag} title={a.title} map={a.map} />
+                ))}
             </div>
         </div>
     )
